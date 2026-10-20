@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profil Mahasiswa</title>
+
+    <!-- Menggunakan jQuery Lokal sesuai ketentuan Tugas (a) -->
+    <script src="jquery-3.7.1.min.js"></script>
+
+    <!-- Menghubungkan ke file script.js eksternal sesuai ketentuan Tugas (e) -->
+    <script src="script.js" defer></script>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #cedff9;
+        text-align: center;
+        padding: 20px;
+      }
+
+      .container {
+        max-width: 500px;
+        margin: auto;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .foto-profil {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        background: #007acc;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 15px auto;
+        font-size: 14px;
+        font-weight: bold;
+        transition: border-radius 0.3s;
+      }
+
+      .biodata {
+        background: #eef2f5;
+        padding: 15px;
+        border-radius: 8px;
+        margin-top: 15px;
+      }
+
+      .tombol-group {
+        margin-top: 20px;
+      }
+
+      button {
+        margin: 5px;
+        padding: 8px 14px;
+        background: #007acc;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: #005999;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="judul-halaman">Profil Mahasiswa</h1>
+
+      <!-- Elemen Foto / Avatar Profil -->
+      <div id="foto" class="foto-profil">FOTO PROFIL</div>
+
+      <h2 id="nama-mahasiswa">Dinda Shafa Nalaratih</h2>
+      <p id="prodi-mahasiswa">Program Studi: Teknologi Informasi</p>
+
+      <!-- Tombol Interaktif -->
+      <div class="tombol-group">
+        <!-- Teks tombol diubah menjadi Ubah Warna Judul -->
+        <button id="btn-mode">Ubah Warna Judul</button>
+        <button id="btn-toggle-bio">Sembunyikan / Tampilkan Bio</button>
+        <button id="btn-animasi">Animasi Foto</button>
+      </div>
+
+      <!-- Kotak Informasi Detail -->
+      <div id="box-biodata" class="biodata">
+        <h3>Detail Informasi</h3>
+        <p id="teks-bio">NIM: 2200010001 | Semester: 3</p>
+        <p id="status-aktif">Status: Aktif</p>
+      </div>
+    </div>
+  </body>
+</html>
